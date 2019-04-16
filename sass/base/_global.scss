@@ -1,0 +1,66 @@
+body{
+    width: 100%;
+    text-align: center;
+    font-family: $primary-font;
+}
+
+html{
+    font-size: 50%; // 1rem = 8px;
+    
+    @include respond(tablet){
+        font-size: 60%;
+    }
+
+    @include respond (desk){
+        font-size: 62.5%;
+    }
+    
+}
+.flex-conteiner{
+   display: flex;
+   justify-content: space-around;
+    flex-direction: column;
+    min-height: 20rem;
+    padding: 1.2rem;
+
+    @include respond(tablet) {  
+
+       flex-direction: row;
+    }
+    
+}
+
+.active{
+    color: $color-green;
+}
+
+hr{
+    width: 5rem;
+    height: 1px;
+    background-color: #00e0d0;
+    margin: 1.2rem auto;
+
+    @include respond (tablet){
+        margin: 2rem auto;
+    }
+}
+.btn{
+    text-decoration: none;
+    border-radius: .2rem;
+    color: $color-green;
+    border: 1px solid $color-green;
+    padding: 1rem 1.6rem;
+    font-size: 1.8rem;
+    font-family: $secondary-font;
+    text-transform: uppercase;
+    position: relative;
+    top: 1.5rem;
+    cursor: pointer;
+
+    &:hover{
+        color: lighten($color-green, 5%)
+    }
+    @include respond (tablet){
+       top: 5rem;
+    }
+}
