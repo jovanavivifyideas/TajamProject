@@ -119,10 +119,21 @@ hr {
   background-color: rgba(57, 45, 97, 0.8); }
 
 .intro__heading {
+  position: relative;
   font-size: 3rem;
   color: #fff;
   font-family: "Playfair Display";
   font-weight: 900; }
+  .intro__heading::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5rem;
+    height: 1px;
+    background-color: #00e0d0;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1rem; }
   @media (min-width: 900px) {
     .intro__heading {
       font-size: 3.5rem; } }

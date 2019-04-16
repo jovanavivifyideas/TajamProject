@@ -6,14 +6,29 @@
 }
 
 .intro__heading{
+    position: relative;
     font-size: 3rem;
         color:$color-white;
         font-family: $heading-font;
         font-weight: 900;
 
+       &::after{
+        content:"";
+        display: block;
+        position:absolute;
+        width: 5rem;
+        height: 1px;
+        background-color: #00e0d0;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -1rem;
+       }
+
         @include respond(desk){
             font-size: 3.5rem;
         }
+        
+
 }
 
 .intro__paragraf{
