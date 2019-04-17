@@ -31,18 +31,6 @@ html{
     }   
 }
 
-
-hr{
-    width: 5rem;
-    height: 1px;
-    background-color: #00e0d0;
-    margin: 1.2rem auto;
-
-    @include respond (tablet){
-        margin: 2rem auto;
-    }
-}
-
 .btn{
     text-decoration: none;
     border-radius: .2rem;
