@@ -26,15 +26,6 @@ html {
     .flex {
       flex-direction: row; } }
 
-hr {
-  width: 5rem;
-  height: 1px;
-  background-color: #00e0d0;
-  margin: 1.2rem auto; }
-  @media (min-width: 600px) {
-    hr {
-      margin: 2rem auto; } }
-
 .btn {
   text-decoration: none;
   border-radius: .2rem;
@@ -48,9 +39,6 @@ hr {
   cursor: pointer; }
   .btn:hover {
     color: #00f9e7; }
-  @media (min-width: 600px) {
-    .btn {
-      top: 5rem; } }
 
 .wrap {
   width: 1500px; }
@@ -139,7 +127,7 @@ hr {
   position: relative;
   font-size: 3rem;
   color: #fff;
-  font-family: "Playfair Display";
+  font-family: "Playfair Display", serif;
   font-weight: 900; }
   .intro__heading::after {
     content: "";
@@ -188,3 +176,51 @@ hr {
 
 .intro-btn {
   top: 1.5rem; }
+  @media (min-width: 600px) {
+    .intro-btn {
+      top: 5rem; } }
+
+.our-story {
+  background-color: #fff; }
+
+.our-story-conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 90rem;
+  margin: 2.5rem 2rem 0 2rem; }
+  @media (min-width: 600px) {
+    .our-story-conteiner {
+      flex-direction: row;
+      margin: 3.5rem auto; } }
+
+.our-story__img {
+  align-self: center; }
+
+.our-story__description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 1.5rem;
+  margin-left: 4rem; }
+
+.our-story__heading {
+  font-size: 2.2rem;
+  font-family: "Playfair Display", serif;
+  letter-spacing: .1rem;
+  color: #413d4b;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.our-story__paragraf {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: "Roboto";
+  font-weight: 300;
+  color: #bdbbc0;
+  margin-top: 2rem; }
+
+.our-story__btn {
+  margin-top: 2rem; }

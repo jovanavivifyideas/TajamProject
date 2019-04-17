@@ -64,4 +64,8 @@
 }
 .intro-btn{
     top: 1.5rem;
+
+    @include respond (tablet){
+        top: 5rem;
+     }
 }
