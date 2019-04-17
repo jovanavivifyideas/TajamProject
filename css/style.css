@@ -4,7 +4,6 @@
   box-sizing: border-box; }
 
 body {
-  width: 100%;
   text-align: center;
   font-family: "Roboto"; }
 
@@ -46,7 +45,6 @@ hr {
   font-family: "Hammersmith One";
   text-transform: uppercase;
   position: relative;
-  top: 1.5rem;
   cursor: pointer; }
   .btn:hover {
     color: #00f9e7; }
@@ -54,7 +52,16 @@ hr {
     .btn {
       top: 5rem; } }
 
+.wrap {
+  width: 1500px; }
+
+.site-logo {
+  display: flex;
+  justify-content: center; }
+
 .site-logo__link {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   cursor: pointer; }
 
@@ -68,9 +75,8 @@ hr {
   font-family: "Roboto";
   font-weight: 250;
   text-transform: lowercase;
-  position: relative;
-  left: .8rem;
-  bottom: 1.5rem; }
+  margin-left: 1rem;
+  margin-top: 1rem; }
 
 .site-navigation__list {
   list-style: none; }
@@ -108,15 +114,26 @@ hr {
 .site-navigation__link--active {
   color: #00dfcf; }
 
-.header {
-  width: 100%;
-  height: 27rem;
+.header-wrapper {
   background-color: rgba(57, 45, 97, 0.8); }
 
+.header-conteiner {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding-top: 1.7rem; }
+  @media (min-width: 600px) {
+    .header-conteiner {
+      flex-direction: row; } }
+
 .intro {
-  width: 100%;
-  height: 50rem;
-  background-color: rgba(57, 45, 97, 0.8); }
+  height: 50rem; }
+
+.intro-conteiner {
+  max-width: 120rem;
+  margin: 12rem auto 0 auto; }
 
 .intro__heading {
   position: relative;
@@ -144,7 +161,7 @@ hr {
   line-height: 2.1rem;
   color: #bdbbc0;
   font-family: "Roboto";
-  font-weight: 250;
+  font-weight: 200;
   margin: 2rem; }
   @media (min-width: 900px) {
     .intro__paragraf {
@@ -168,3 +185,6 @@ hr {
   height: 12px;
   display: inline-block;
   cursor: pointer; }
+
+.intro-btn {
+  top: 1.5rem; }

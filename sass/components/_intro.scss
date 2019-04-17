@@ -1,28 +1,21 @@
 
 .intro{
-    width: 100%;
-    height: 50rem;
-    background-color: rgba($color-purple, 0.8);
+    height: 50rem; 
+}
+
+.intro-conteiner{
+    max-width: 120rem;
+    margin: 12rem auto 0 auto;
 }
 
 .intro__heading{
     position: relative;
     font-size: 3rem;
-        color:$color-white;
-        font-family: $heading-font;
-        font-weight: 900;
-
-       &::after{
-        content:"";
-        display: block;
-        position:absolute;
-        width: 5rem;
-        height: 1px;
-        background-color: #00e0d0;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: -1rem;
-       }
+    color:$color-white;
+    font-family: $heading-font;
+    font-weight: 900;
+  
+    @include line($color-line);
 
         @include respond(desk){
             font-size: 3.5rem;
@@ -37,7 +30,7 @@
     line-height: 2.1rem;
     color:$font-gray-light;
     font-family: $primary-font;
-    font-weight: 250;
+    font-weight: 200;
     margin: 2rem;
 
     @include respond(desk){
@@ -68,4 +61,7 @@
     height: 12px;
     display: inline-block;
     cursor: pointer;
+}
+.intro-btn{
+    top: 1.5rem;
 }

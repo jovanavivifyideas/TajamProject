@@ -16,3 +16,16 @@
     }
 }
 
+@mixin line ($background-color){
+    &::after{
+        content:"";
+        display: block;
+        position:absolute;
+        width: 5rem;
+        height: 1px;
+        background-color: $background-color;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -1rem;
+       }
+}

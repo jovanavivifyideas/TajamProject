@@ -1,6 +1,6 @@
 
 body{
-    width: 100%;
+  
     text-align: center;
     font-family: $primary-font;
 }
@@ -53,7 +53,7 @@ hr{
     font-family: $secondary-font;
     text-transform: uppercase;
     position: relative;
-    top: 1.5rem;
+    
     cursor: pointer;
 
     &:hover{
@@ -62,4 +62,7 @@ hr{
     @include respond (tablet){
        top: 5rem;
     }
+}
+.wrap{
+    width: 1500px;
 }
