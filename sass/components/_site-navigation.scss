@@ -1,0 +1,50 @@
+
+.site-navigation__list{
+    list-style: none;
+
+    :first-child{
+        margin-top: 1.2rem;     
+    }
+
+    @include respond(tablet){
+        display: flex;
+        position: relative;
+        top: 2.2rem;
+
+        :first-child{
+          margin-top: 0;
+        }
+        
+    }
+}
+
+
+.site-navigation__item{
+    margin-bottom: 1rem;
+}
+
+.site-navigation__link{
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:$color-white;
+    cursor: pointer;
+    
+    &:hover{
+        color:$color-green;
+    }
+
+    @include respond(tablet){
+        font-size: 1.2rem;
+        margin-right: 1.5rem;
+    }
+
+    @include respond(desk){
+        font-size: 1.5rem;
+        margin-right: 1.3rem;
+    }
+}
+.site-navigation__link--active{
+    color: $color-green;
+}
