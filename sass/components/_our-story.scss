@@ -1,0 +1,57 @@
+.our-story-conteiner{
+    background-color: $color-white;
+}
+
+.our-story{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 90rem;
+    margin: 2.5rem 2rem 0 2rem;
+ 
+    @include respond(tablet) {  
+        flex-direction: row;
+        margin: 3.5rem auto ;
+     }   
+}
+
+.our-story__img{
+    align-self: center;
+}
+
+.our-story__description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 1.5rem;
+    margin-left: 4rem;
+    
+      
+}
+
+.our-story__heading{
+    font-size: 2.2rem;
+    font-family: $heading-font;
+    letter-spacing: .1rem;
+    color:$font-purple;
+    font-weight: 700;
+    text-transform: uppercase;
+  
+}
+
+.our-story__paragraf{
+   font-size: 1.5rem;
+   line-height: 2rem;
+   font-family: $primary-font;
+   font-weight: 300;
+   color:$font-gray-light;
+   margin-top: 2rem;
+}
+
+.our-story__btn{
+    margin-top: 2rem;
+
+   
+}
