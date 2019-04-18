@@ -324,3 +324,111 @@ html {
 
 .team__btn {
   top: 3.5rem; }
+
+.expertise-conteiner {
+  background-color: #fff; }
+
+.expertise {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 6rem 0; }
+
+.expertise__heading {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 1rem; }
+  .expertise__heading::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5rem;
+    height: 1px;
+    background-color: #bdbbc0;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1rem; }
+
+.expertise__heading-title {
+  font-size: 2.2rem;
+  font-family: "Playfair Display";
+  letter-spacing: .1rem;
+  color: #413d4b;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1.2rem 0; }
+
+.expertise__heading-text {
+  position: relative;
+  font-size: 1.5rem;
+  font-family: "Playfair Display";
+  font-weight: 300;
+  color: #78777c; }
+
+.expertise-sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  flex-wrap: wrap;
+  margin: 4rem auto; }
+  @media (min-width: 600px) {
+    .expertise-sections {
+      flex-direction: row;
+      justify-content: center; } }
+
+.expertise-sections__card {
+  width: 45%;
+  height: 14rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-right: none; }
+  .expertise-sections__card:not(:last-child) {
+    border-bottom: 1px solid #bdbbc0; }
+  @media (min-width: 600px) {
+    .expertise-sections__card {
+      width: 35%;
+      border-bottom: 1px solid #bdbbc0; }
+      .expertise-sections__card:not(:nth-child(3n+3)) {
+        border-right: none; }
+      .expertise-sections__card:not(:nth-child(2n+2)) {
+        border-right: 1px solid #bdbbc0; }
+      .expertise-sections__card:nth-last-child(-n+2) {
+        border-bottom: none; } }
+  @media (min-width: 900px) {
+    .expertise-sections__card {
+      width: 30%; }
+      .expertise-sections__card:not(:nth-child(2n+2)) {
+        border-right: none; }
+      .expertise-sections__card:not(:nth-child(3n+3)) {
+        border-right: 1px solid #bdbbc0; }
+      .expertise-sections__card:nth-last-child(-n+3) {
+        border-bottom: none; } }
+
+.expertise-sections__icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem; }
+
+.fas {
+  background: -webkit-linear-gradient(#01dfd0, #47a5cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.expertise-sections__title {
+  font-family: "Roboto";
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #413d4b;
+  letter-spacing: .1rem;
+  margin-bottom: .8rem;
+  text-transform: uppercase; }
+
+.expertise-sections__description {
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 300;
+  color: #78777c;
+  letter-spacing: .1rem;
+  position: relative; }
