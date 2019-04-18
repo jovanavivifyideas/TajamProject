@@ -1,0 +1,126 @@
+.expertise-conteiner{
+    background-color: $color-white;
+}
+
+.expertise{
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 6rem 0;
+}
+
+.expertise__heading{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 1rem;
+    @include line($font-gray-light);
+}
+.expertise__heading-title{
+    font-size: 2.2rem;
+    font-family: $heading-font;
+    letter-spacing: .1rem;
+    color:$font-purple;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1.2rem 0;
+}
+
+.expertise__heading-text{
+   position: relative;
+   font-size: 1.5rem;
+   font-family: $heading-font;
+   font-weight: 300;
+   color:$font-gray-dark;  
+}
+
+.expertise-sections{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 90%;
+    flex-wrap: wrap;
+    margin: 4rem auto;
+   @include respond(tablet) {  
+    flex-direction: row;
+    justify-content: center;
+ }   
+}
+
+.expertise-sections__card{
+    width: 45%;
+    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:1rem;
+    border-right: none;
+
+    &:not(:last-child) {
+        border-bottom: 1px solid $font-gray-light;
+    }
+   
+ @include respond(tablet){
+    width: 35%;
+    border-bottom: 1px solid $font-gray-light;
+
+    &:not(:nth-child(3n+3)) {
+        border-right: none;
+    }
+
+    &:not(:nth-child(2n+2)){
+        border-right: 1px solid $font-gray-light;
+    }  
+    &:nth-last-child(-n+2){
+        border-bottom: none;
+    }
+ }
+
+ @include respond (desk){
+     width: 30%;
+
+     &:not(:nth-child(2n+2)) {
+        border-right: none;
+     }
+
+     &:not(:nth-child(3n+3)){
+        border-right: 1px solid $font-gray-light;
+    }
+    &:nth-last-child(-n+3){
+        border-bottom: none;
+    }
+ }
+}
+
+.expertise-sections__icon{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+   
+}
+
+.fas {
+    background: -webkit-linear-gradient( $color-one, $color-two);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.expertise-sections__title{
+    font-family: $primary-font;
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: $font-purple;
+    letter-spacing: .1rem;
+    margin-bottom: .8rem;
+    text-transform: uppercase;
+
+}
+
+.expertise-sections__description{
+    font-family: $primary-font;
+    font-size: 1rem;
+    font-weight: 300;
+    color: $font-gray-dark;
+    letter-spacing: .1rem;
+    position: relative;
+   
+}
+
