@@ -1,0 +1,101 @@
+.team-conteiner{
+    background-color: $bg-purple;
+}
+.team{
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 8rem 0;
+}
+
+.team__heading{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 1rem;
+    @include line($paragraf-color);
+}
+.team__heading-title{
+    font-size: 2.2rem;
+    font-family: $heading-font;
+    letter-spacing: .1rem;
+    color:$color-white;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1.2rem 0;
+}
+
+.team__heading-text{
+   position: relative;
+   font-size: 1.5rem;
+   font-family: $heading-font;
+   font-weight: 300;
+   color:$paragraf-color;
+    
+}
+
+.team-members{
+   display: flex;
+   flex-direction: column;
+   align-items:center;
+   margin: 4rem 0;
+   @include respond(tablet) {  
+    flex-direction: row;
+    justify-content: space-evenly;
+ }   
+}
+.team-members__card{
+ margin-bottom: 3rem;
+ width: 20rem;
+ @include respond(tablet){
+    width: 22.2%;
+ }
+}
+
+.team-members__img{
+    width: 20rem;   
+    height: 20rem;
+    background-color: $color-white;
+    @include respond(tablet){
+        width: 100%;
+    }
+}
+
+.team-members__info{
+    height: 8rem;
+    width: 20rem;
+    border: .1rem solid $paragraf-color;
+    @include respond(tablet){
+        width: 100%;
+    }
+}
+
+.team-members__name{
+    font-family: $primary-font;
+    font-size: 2rem;
+    font-weight: 900;
+    color: $color-white;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    letter-spacing: .1rem;
+}
+
+.team-members__job{
+    font-family: $primary-font;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: $paragraf-color;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+.team__paragraf{
+    font-family: $primary-font;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: $paragraf-color;
+    letter-spacing: .1rem;
+}
+
+.team__btn{
+    top: 3.5rem;
+}
+
