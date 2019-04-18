@@ -249,7 +249,7 @@ html {
     transform: translateX(-50%);
     bottom: -1rem; }
 
-.team__heading--title {
+.team__heading-title {
   font-size: 2.2rem;
   font-family: "Playfair Display";
   letter-spacing: .1rem;
@@ -258,7 +258,7 @@ html {
   text-transform: uppercase;
   padding: 1.2rem 0; }
 
-.team__heading--text {
+.team__heading-text {
   position: relative;
   font-size: 1.5rem;
   font-family: "Playfair Display";

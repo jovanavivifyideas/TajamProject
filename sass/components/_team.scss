@@ -14,7 +14,7 @@
     padding-bottom: 1rem;
     @include line($paragraf-color);
 }
-.team__heading--title{
+.team__heading-title{
     font-size: 2.2rem;
     font-family: $heading-font;
     letter-spacing: .1rem;
@@ -24,7 +24,7 @@
     padding: 1.2rem 0;
 }
 
-.team__heading--text{
+.team__heading-text{
    position: relative;
    font-size: 1.5rem;
    font-family: $heading-font;
