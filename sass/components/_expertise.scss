@@ -97,8 +97,10 @@
    
 }
 
-.fas {
-    background: -webkit-linear-gradient( $color-one, $color-two);
+ 
+.fa-keyboard, .fa-paint-brush, .fa-mobile-alt,
+.fa-desktop, .fa-heart {
+    background: -webkit-linear-gradient( $transparent-green, $transparent-blue);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
