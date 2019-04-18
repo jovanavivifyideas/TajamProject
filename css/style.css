@@ -127,7 +127,7 @@ html {
   position: relative;
   font-size: 3rem;
   color: #fff;
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display";
   font-weight: 900; }
   .intro__heading::after {
     content: "";
@@ -189,7 +189,7 @@ html {
   align-items: flex-start;
   flex-direction: column;
   max-width: 90rem;
-  margin: 2.5rem 2rem 0 2rem; }
+  margin: 2.5rem; }
   @media (min-width: 600px) {
     .our-story {
       flex-direction: row;
@@ -208,7 +208,7 @@ html {
 
 .our-story__heading {
   font-size: 2.2rem;
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display";
   letter-spacing: .1rem;
   color: #413d4b;
   font-weight: 700;
@@ -224,3 +224,88 @@ html {
 
 .our-story__btn {
   margin-top: 2rem; }
+
+.team-conteiner {
+  background-color: rgba(57, 45, 97, 0.8); }
+
+.team {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 8rem 0; }
+
+.team__heading {
+  font-size: 2.2rem;
+  font-family: "Playfair Display";
+  letter-spacing: .1rem;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1.2rem 0; }
+
+.team__paragraf {
+  position: relative;
+  font-size: 1.5rem;
+  font-family: "Playfair Display";
+  font-weight: 300;
+  color: #9f96b2; }
+  .team__paragraf::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5rem;
+    height: 1px;
+    background-color: #9f96b2;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1rem; }
+
+.team-members {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 0; }
+  @media (min-width: 600px) {
+    .team-members {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly; } }
+
+.team-members__card {
+  margin-bottom: 3rem; }
+
+.team-members__img {
+  width: 20rem;
+  height: 20rem;
+  background-color: #fff; }
+
+.team-members__info {
+  height: 8rem;
+  width: 20rem;
+  border: 0.1rem solid #9f96b2; }
+
+.team-members__name {
+  font-family: "Roboto";
+  font-size: 2rem;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  letter-spacing: .1rem; }
+
+.team-members__job {
+  font-family: "Roboto";
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #9f96b2;
+  text-transform: uppercase;
+  letter-spacing: .1rem; }
+
+.team__join {
+  font-family: "Roboto";
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #9f96b2;
+  letter-spacing: .1rem; }
+
+.team__btn {
+  top: 3.5rem; }
