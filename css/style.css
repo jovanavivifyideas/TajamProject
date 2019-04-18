@@ -234,21 +234,11 @@ html {
   padding: 8rem 0; }
 
 .team__heading {
-  font-size: 2.2rem;
-  font-family: "Playfair Display";
-  letter-spacing: .1rem;
-  color: #fff;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding: 1.2rem 0; }
-
-.team__paragraf {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  font-size: 1.5rem;
-  font-family: "Playfair Display";
-  font-weight: 300;
-  color: #9f96b2; }
-  .team__paragraf::after {
+  padding-bottom: 1rem; }
+  .team__heading::after {
     content: "";
     display: block;
     position: absolute;
@@ -259,6 +249,22 @@ html {
     transform: translateX(-50%);
     bottom: -1rem; }
 
+.team__heading--title {
+  font-size: 2.2rem;
+  font-family: "Playfair Display";
+  letter-spacing: .1rem;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1.2rem 0; }
+
+.team__heading--text {
+  position: relative;
+  font-size: 1.5rem;
+  font-family: "Playfair Display";
+  font-weight: 300;
+  color: #9f96b2; }
+
 .team-members {
   display: flex;
   flex-direction: column;
@@ -267,21 +273,30 @@ html {
   @media (min-width: 600px) {
     .team-members {
       flex-direction: row;
-      flex-wrap: wrap;
       justify-content: space-evenly; } }
 
 .team-members__card {
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  width: 20rem; }
+  @media (min-width: 600px) {
+    .team-members__card {
+      width: 22.2%; } }
 
 .team-members__img {
   width: 20rem;
   height: 20rem;
   background-color: #fff; }
+  @media (min-width: 600px) {
+    .team-members__img {
+      width: 100%; } }
 
 .team-members__info {
   height: 8rem;
   width: 20rem;
   border: 0.1rem solid #9f96b2; }
+  @media (min-width: 600px) {
+    .team-members__info {
+      width: 100%; } }
 
 .team-members__name {
   font-family: "Roboto";
@@ -300,7 +315,7 @@ html {
   text-transform: uppercase;
   letter-spacing: .1rem; }
 
-.team__join {
+.team__paragraf {
   font-family: "Roboto";
   font-size: 1.3rem;
   font-weight: 300;
