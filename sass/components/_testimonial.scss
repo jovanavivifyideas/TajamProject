@@ -13,12 +13,12 @@
   margin-bottom: 5rem;
 }
 
-.testimonial__comment--icon{
+.testimonial__comment-icon{
     font-size: 2.5rem;
     color:$color-white;  
 }
 
-.testimonial__comment--paragraf{
+.testimonial__comment-paragraf{
   font-size: 1.6rem;
   line-height: 2.5rem;
   font-weight: 400;
@@ -27,7 +27,7 @@
   margin: 2rem 1rem;
 }
 
-.testimonial__person--name{
+.testimonial__person-name{
   color: $color-white;
   letter-spacing: 1px;
   font-weight: 900;
@@ -35,7 +35,7 @@
   font-size: 1.4rem;
   margin-bottom: 1rem;
 }
-.testimonial__person--job{
+.testimonial__person-job{
   font-family: $primary-font;
   font-size: 1.3rem;
   text-transform: uppercase;
@@ -48,12 +48,12 @@
   justify-content: center;
 }
 
-.testimonial__slider--icon {
+.testimonial__slider-icon {
   margin-top: 1.5rem;
   font-size: 2.3rem;
   color: $paragraf-color;
 }
-.testimonial__slider--img{
+.testimonial__slider-img{
   width: 5rem;
   height: 5rem;
   border-radius: 50%;

@@ -411,8 +411,7 @@ html {
   font-size: 2.5rem;
   margin-bottom: 1rem; }
 
-.fa-keyboard, .fa-paint-brush, .fa-mobile-alt,
-.fa-desktop, .fa-heart {
+.transparent--icon {
   background: -webkit-linear-gradient(#01dfd0, #47a5cc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
@@ -445,11 +444,11 @@ html {
 .testimonial__comment {
   margin-bottom: 5rem; }
 
-.testimonial__comment--icon {
+.testimonial__comment-icon {
   font-size: 2.5rem;
   color: #fff; }
 
-.testimonial__comment--paragraf {
+.testimonial__comment-paragraf {
   font-size: 1.6rem;
   line-height: 2.5rem;
   font-weight: 400;
@@ -457,7 +456,7 @@ html {
   color: #9f96b2;
   margin: 2rem 1rem; }
 
-.testimonial__person--name {
+.testimonial__person-name {
   color: #fff;
   letter-spacing: 1px;
   font-weight: 900;
@@ -465,7 +464,7 @@ html {
   font-size: 1.4rem;
   margin-bottom: 1rem; }
 
-.testimonial__person--job {
+.testimonial__person-job {
   font-family: "Roboto";
   font-size: 1.3rem;
   text-transform: uppercase;
@@ -476,18 +475,18 @@ html {
   display: flex;
   justify-content: center; }
 
-.testimonial__slider--icon {
+.testimonial__slider-icon {
   margin-top: 1.5rem;
   font-size: 2.3rem;
   color: #9f96b2; }
 
-.testimonial__slider--img {
+.testimonial__slider-img {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
   background-color: white;
   margin: 0 0.5rem;
   transition: all 1s; }
-  .testimonial__slider--img:hover {
+  .testimonial__slider-img:hover {
     width: 7rem;
     height: 7rem; }
