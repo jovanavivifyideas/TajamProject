@@ -490,3 +490,77 @@ html {
   .testimonial__slider-img:hover {
     width: 7rem;
     height: 7rem; }
+
+.contact-section-conteiner {
+  background-color: #fff; }
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 90rem;
+  margin: 6rem auto; }
+  @media (min-width: 600px) {
+    .contact-section {
+      flex-direction: row; } }
+
+.contact-section__contact {
+  display: flex;
+  flex: 1 0 0%;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  width: 90%; }
+
+.contact-section__heading {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  color: #413d4b;
+  align-self: self-start;
+  font-family: "Playfair Display";
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 2rem; }
+
+.contact-section__form {
+  display: flex;
+  align-items: self-end;
+  flex-direction: column; }
+
+.contact-section__input {
+  border: 1px solid #bdbbc0;
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 12px 20px; }
+
+.contact-section__textarea {
+  width: 100%;
+  height: 20rem;
+  border: 1px solid #bdbbc0;
+  padding: 2rem; }
+
+.contact-section__btn {
+  top: 1.7rem;
+  padding: 1rem 2.7rem; }
+
+.contact-section__client {
+  flex: 1 0 0%; }
+
+.contact-section__client-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  flex-wrap: wrap; }
+  @media (min-width: 600px) {
+    .contact-section__client-img {
+      flex-direction: row;
+      justify-content: center;
+      margin: 2.5rem auto; } }
+
+.contact-section__client-logo {
+  margin: 2.5rem; }
+  @media (min-width: 600px) {
+    .contact-section__client-logo {
+      width: 50%;
+      margin: 0;
+      padding: 2rem; } }
