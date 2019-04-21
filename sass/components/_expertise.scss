@@ -97,8 +97,9 @@
    
 }
 
-.fas {
-    background: -webkit-linear-gradient( $color-one, $color-two);
+ 
+.transparent--icon {
+    background: -webkit-linear-gradient( $transparent-green, $transparent-blue);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -111,8 +112,8 @@
     letter-spacing: .1rem;
     margin-bottom: .8rem;
     text-transform: uppercase;
-
 }
+
 
 .expertise-sections__description{
     font-family: $primary-font;
